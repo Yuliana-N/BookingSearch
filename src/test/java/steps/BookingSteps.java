@@ -37,6 +37,7 @@ public class BookingSteps {
     }
 
     @And("has rating {string}")
-    public void hasRating(String arg0) {
+    public void hasRating(String hotelScore) {
+        searchResultPage.hotelShouldHaveScore(hotelScore,hotelName);
     }
 }
